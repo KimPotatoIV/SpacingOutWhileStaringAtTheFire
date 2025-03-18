@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb4fw72377ilt"]
+
+[ext_resource type="PackedScene" uid="uid://blqfm26egivjo" path="res://scenes/torch/torch.tscn" id="2_iuonh"]
+
+[node name="Main" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1080, 1080)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+
+[node name="Torch" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(540, 950)
+
+[node name="Torch2" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(210, 750)
+
+[node name="Torch3" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(900, 800)
+
+[node name="Torch4" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(660, 480)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.35
+blend_mode = 1
