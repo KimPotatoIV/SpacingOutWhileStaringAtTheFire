@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://6d767ohxpams"]
+[gd_scene load_steps=3 format=3 uid="uid://6d767ohxpams"]
 
 [ext_resource type="Script" uid="uid://bergplh2ylj2l" path="res://scenes/fire/fire.gd" id="1_q881c"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_q881c"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
 
 [node name="Fire" type="Node2D"]
 script = ExtResource("1_q881c")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 lifetime = 1.5
+process_material = SubResource("ParticleProcessMaterial_q881c")

@@ -4,6 +4,10 @@
 
 [node name="Main" type="Node2D"]
 
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.35
+blend_mode = 1
+
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1080, 1080)
 offset_right = 40.0
@@ -21,7 +25,3 @@ position = Vector2(900, 800)
 
 [node name="Torch4" parent="." instance=ExtResource("2_iuonh")]
 position = Vector2(660, 480)
-
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-energy = 0.35
-blend_mode = 1
